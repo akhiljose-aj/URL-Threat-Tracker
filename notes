@@ -1,0 +1,31 @@
+>Malicious Keywords: It checks if the URL contains certain keywords
+commonly associated with malicious websites such as "malware," "phishing," "attack," "exploit," or "virus."
+
+>IP Address Check: It checks if the URL starts with an IP address
+(in the format of "http://x.x.x.x" or "https://x.x.x.x").
+This is often used by malicious websites to obfuscate their identity.
+
+>Excessive Subdomains: It checks if the URL has an excessive number of subdomains
+ (more than or equal to 4 dots in the domain part). Some malicious websites use long subdomains to deceive users.
+
+>Known Suspicious Domains: It checks if the URL's domain (netloc) is part of a list of known suspicious domains.
+ These are typically free hosting domains or domains associated with a higher risk of malicious activity.
+
+>Unusual Characters: It checks if the URL contains characters that are
+not letters, digits, spaces, colons, periods, or hyphens. Unusual characters can be
+ an indicator of a malicious URL.
+
+>URL Shorteners: It checks if the URL matches common URL shortener patterns
+(e.g., bit.ly, t.co, tinyurl.com). Malicious actors may use URL shorteners to hide
+ the actual destination of the link.
+
+>The script takes user input for a URL and then applies these checks.
+ If any of the checks pass (i.e., return True),
+  it considers the URL potentially malicious and prints a corresponding message.
+   Otherwise, it assumes the URL is not malicious.
+
+>It's important to note that this script provides a basic level of URL analysis and
+should not be considered foolproof.
+Malicious websites can employ various techniques to evade detection,
+ so additional security measures should be implemented in a real-world application.
+ Also, the list of known suspicious domains may need to be updated over time as new threats emerge

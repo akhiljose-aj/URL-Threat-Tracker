@@ -1,0 +1,34 @@
+Start
+|
+v
+Enter the URL to check
+|
+v
+Check if the URL is empty
+|
+|---> Display an error message
+|       |
+|       v
+|    End
+|
+v
+Check if the URL starts with "https://" or "http://"
+|
+|---> Display an error message
+|       |
+|       v
+|    End
+|
+v
+Check if the URL is malicious
+|
+|---> Display a warning if malicious
+|       |
+|       v
+|    End
+|
+v
+Display a message that the URL is likely safe
+|
+v
+End
